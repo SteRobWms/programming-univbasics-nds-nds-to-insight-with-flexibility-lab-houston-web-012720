@@ -68,7 +68,6 @@ end
 #   # movie_with_director_name method
 # end
 
-
 def gross_per_studio(collection)
   # pp collection
   gross_by_studio = {}
