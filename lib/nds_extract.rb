@@ -86,9 +86,10 @@ def movies_with_director_key(name, movies_collection)
     mwd_aoh << movie_with_director_name(name, movie_data)
     index += 1
   end
-  return mwd_aoh
+  pp mwd_aoh
 end
 
+movies_with_director_key("boop", directorlist)
 # def movies_with_director_key(name, movies_collection)
 #   mwd_aoh = []
 #   index = 0
