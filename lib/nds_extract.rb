@@ -89,7 +89,7 @@ def movies_with_director_key(name, movies_collection)
   pp mwd_aoh
 end
 
-movies_with_director_key("boop", directorlist)
+# movies_with_director_key("boop", directorlist)
 # def movies_with_director_key(name, movies_collection)
 #   mwd_aoh = []
 #   index = 0
@@ -161,7 +161,7 @@ def movies_with_directors_set(source)
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
 end
-# movies_with_directors_set(directorlist)
+movies_with_directors_set(directorlist)
 # ----------------    End of Your Code Region --------------------
 # Don't edit the following code! Make the methods above work with this method
 # call code. You'll have to "see-saw" to get this to work!
