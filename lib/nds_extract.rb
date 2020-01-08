@@ -1,48 +1,3 @@
-directorlist = [
- {:name=>"Stephen Spielberg",
-  :movies=>
-   [{:title=>"Jaws",
-     :studio=>"Universal",
-     :worldwide_gross=>260000000,
-     :release_year=>1975},
-    {:title=>"Close Encounters of the Third Kind",
-     :studio=>"Columbia",
-     :worldwide_gross=>135189114,
-     :release_year=>1977}]},
- {:name=>"Russo Brothers",
-  :movies=>
-   [{:title=>"Avengers Endgame",
-     :studio=>"Buena Vista",
-     :worldwide_gross=>858371337,
-     :release_year=>2019},
-    {:title=>"Avengers Infinity War",
-     :studio=>"Buena Vista",
-     :worldwide_gross=>678815482,
-     :release_year=>2018}]},
- {:name=>"James Cameron",
-  :movies=>
-   [{:title=>"Avatar",
-     :studio=>"Fox",
-     :worldwide_gross=>760507625,
-     :release_year=>2009},
-    {:title=>"Titanic",
-     :studio=>"Paramount",
-     :worldwide_gross=>659363944,
-     :release_year=>1997}]},
-  {:name=>"Greff Jegg",
-   :movies=>
-   [{:title=>"Elem Grad",
-     :studio=>"LES",
-     :worldwide_gross=>100,
-     :release_year=>2000},
-    {:title=>"HS Grad",
-     :studio=>"LHS",
-     :worldwide_gross=>20000,
-     :release_year=>2006},
-    {:title=>"Uni Grad",
-     :studio =>"Baylor",
-     :worldwide_gross=>120000,
-     :release_year=>2010}]}]
 # Provided, don't edit
 # require 'directors_database'
 
@@ -89,33 +44,22 @@ def movies_with_director_key(name, movies_collection)
   pp mwd_aoh
 end
 
-# movies_with_director_key("boop", directorlist)
-# def movies_with_director_key(name, movies_collection)
-#   mwd_aoh = []
-#   index = 0
-#   while index < movies_collection.length do
-#     mwd_aoh << movie_with_director_name(name, movies_collection[index])
-#     index += 1
-#   end
-#   mwd_aoh
-#   # GOAL: For each Hash in an Array (movies_collection), provide a collection
-#   # of movies and a directors name to the movie_with_director_name method
-#   # and accumulate the returned Array of movies into a new Array that's
-#   # returned by this method.
-#   #
-#   # INPUT:
-#   # * name: A director's name
-#   # * movies_collection: An Array of Hashes where each Hash represents a movie
-#   #
-#   # RETURN:
-#   #
-#   # Array of Hashes where each Hash represents a movie; however, they should all have a
-#   # :director_name key. This addition can be done by using the provided
-#   # movie_with_director_name method
-# end
+  # GOAL: For each Hash in an Array (movies_collection), provide a collection
+  # of movies and a directors name to the movie_with_director_name method
+  # and accumulate the returned Array of movies into a new Array that's
+  # returned by this method.
+  #
+  # INPUT:
+  # * name: A director's name
+  # * movies_collection: An Array of Hashes where each Hash represents a movie
+  #
+  # RETURN:
+  #
+  # Array of Hashes where each Hash represents a movie; however, they should all have a
+  # :director_name key. This addition can be done by using the provided
+  # movie_with_director_name method
 
 def gross_per_studio(collection)
-  # pp collection
   gross_by_studio = {}
   n = 0
   while n < collection.length do
